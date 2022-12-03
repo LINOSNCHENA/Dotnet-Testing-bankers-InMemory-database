@@ -33,7 +33,7 @@ namespace ASP4.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult<IQueryable<Product>> GetProducts([FromQuery] string department, [FromQuery] ProductRequest request)
         {
-            if (request.Limit >= 100) _logger.LogInformation("Requesting more than 100 products.");
+            if (request.Limit >= 100) _logger.LogInformation("Requesting more than 99 products.");
 
             var result = _context.Products as IQueryable<Product>;
 

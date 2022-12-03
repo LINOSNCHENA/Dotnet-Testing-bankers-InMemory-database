@@ -25,7 +25,7 @@ namespace ASP4 //BuildRestApiNetCore
       services.AddSwaggerGen(c => c.SwaggerDoc("v1", new OpenApiInfo
       {
         Title = "Products",
-        Description = "The ultimate e-commerce store for all your needs",
+        Description = "The list of possible products in the Mazabuka options",
         Version = "v1"
       }));
     }

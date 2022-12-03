@@ -11,10 +11,10 @@ using ASP4.Extensions;
         {
             var rnd = new Random();
 
-            var adjectives = new[] { "ZSmall", "ZErgonomic", "ZRustic", "ZSZmart", "Sleek" };
-            var materials = new[] { "ZSteel", "ZWooden", "ZConcrete", "ZPlastic", "Granite", "Rubber" };
-            var names = new[] { "ZChair", "ZCar", "ZComputer", "ZPants", "ZShoes" };
-            var departments = new[] { "ZBooks", "ZMovies", "ZMusic", "ZGames", "ZElectronics" };
+            var adjectives = new[] { "Smart", "Economic", "Good", "Intelligient", "Bad" };
+            var materials = new[] { "Componise", "Traditional", "Fake", "Plastic", "Copper", "Obident" };
+            var names = new[] { "Thresa", "Dina", "Catherine", "Bridget", "Precious" };
+            var departments = new[] { "Kuomboka", "Roma", "Hellen", "Ghana", "Mazabuka" };
 
             context.Products.AddRange(900.Times(x =>
             {
@@ -28,7 +28,7 @@ using ASP4.Extensions;
                 {
                     ProductNumber = $"{department.First()}{name.First()}{productId}",
                     Name = $"{adjective} {material} {name}",
-                    Price = (double)rnd.Next(1000, 9000) / 100,
+                    Price = (double)rnd.Next(100, 900) / 10,
                     Department = department
                 };
             }));
