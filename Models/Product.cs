@@ -6,7 +6,7 @@ namespace ASP4.Models
 	{
 		[Key]
 		[Required]
-		[Display(Name = "productNumber")]
+		[Display(Name = "indexNumber")]
 		public string ProductNumber { get; set; }
 
 		[Required]

@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 
-namespace ASP4 //BuildRestApiNetCore
+namespace ASP4 
 {
   public class Startup
   {
